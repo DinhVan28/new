@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bang{
+    border: 1px solid blue;
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+}
+.dong{
+    width: 30px;
+    height: 30px        ;
+}
+.o{
+    width: 33%;
+    height: 50px;
+}

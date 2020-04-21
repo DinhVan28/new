@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="btvn4.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+                 <h2>Employer Log in</h2>
+                 <button class="gach"></button>
+        </div>
+               <div class="import">
+                     <p class="email">EMAIL ADDRESS</p>
+                     <input type = "text" id = "username" name="username" value="" class="input-text">
+                     <p class="password">PASSWORD</p>
+                     <input type = "text" id = "password" name="password" value="" class="input-text">  
+                    <div class="checkbox">
+                        <input type="checkbox" value="">     Remember me for 14 days
+                    </div>
+                    <p class="text-erro" style="color:red;"></p>
+        </div>
+        <div class="link">
+            <span class="text3"><a href="">Forgot password ?</a></span>   
+            <button id="btn" id="btn">Log in</button>
+        </div>
+    </div>
+</body>
+<script>
+        $("#btn").click(function(){
+            var username = $("#username").val();
+            var isusername = true;
+            if(username==""){
+                $(".text-erro").html("bạn vui lòng nhập thông tin")
+                isusername= false;
+            }else{
+                $(".text-erro").html("");
+                isusername= true;
+            }
+            if(isusername==true){
+               alert("bạn đã nhập thành công")}
+               var password = $("#password").val();
+               var ispassword = true;
+               if(password >= 8){
+                   $(".text-erro").html("bạn vui lòng nhập lại mật khẩu")
+                   password = false;
+               }else{
+                $(".text-erro").html("");
+                ispassword= true;
+            }
+            if(ispassword==true){
+               alert("bạn đã nhập thành công")}
+
+        })
+</script>
+</html>
